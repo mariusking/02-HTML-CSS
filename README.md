@@ -8,8 +8,10 @@ Beispiel eines statischen Webservers mit Node als Basis für zukünftige Aufgabe
 ## Aufsetzen
 
 ```bash
+# Repo in eigenen Account forken (mit GitHub GUI)
+
 # Repo klonen
-git clone https://github.com/cas-fe/02-HTML-CSS.git
+git clone https://github.com/USERNAME/02-HTML-CSS.git
 
 # In Verzeichnis wechseln
 cd 02-HTML-CSS
