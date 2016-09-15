@@ -1,6 +1,6 @@
 # 02: HTML/CSS (Teil 1)
 
-* *Datum*: 11. Mai 2016
+* *Datum*: 15. September 2016
 * *Dozenten*: [Matthias Meier](https://github.com/matthiasmeier), [Thomas Jaggi](https://github.com/backflip)
 
 Beispiel eines statischen Webservers mit Node als Basis für zukünftige Aufgaben.
