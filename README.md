@@ -23,7 +23,7 @@ npm i
 ## Webserver starten
 
 ```bash
-node index.js
+npm start
 ```
 
 Im Browser unter http://localhost:3000 erreichbar.
