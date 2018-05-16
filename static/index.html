@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Test</title>
-	</head>
-	
-	<body>
-		<h1>Hello World</h1>
+<head>
+    <title>Test</title>
 
-		<p>Lorem ipsum dolor sit amet, consetetur</p>
-	</body>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1 + p {
+            font-style:italic;
+        }
+
+        ul.a3 li:nth-child(2n) {
+            color: blue;
+        }
+        ul.a4 li:nth-child(3n):not(:nth-child(2n)) {
+            color: red;
+        }
+
+        :not(body) > h1 {
+            font-size: 20px;
+        }
+
+        body * h1 {
+            font-size: 20px
+        }
+
+        a:not([href]) {
+            text-decoration: line-through;
+        }
+
+        a[href=""] {
+            text-decoration: overline;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<h1>Hello World</h1>
+
+<p>Lorem ipsum dolor sit amet, consetetur</p>
+<p>Lorem ipsum dolor sit amet, consetetur</p>
+<p>Lorem ipsum dolor sit amet, consetetur</p>
+<p>Lorem ipsum dolor sit amet, consetetur</p>
+
+<ul class="a3">
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+</ul>
+
+<ul class="a4">
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+    <li>hello</li>
+</ul>
+
+<section>
+    <h1>h1 in einer section</h1>
+</section>
+
+<a>a ohne href</a>
+<a href="">a leeres href</a>
+<a href="#">a mit href</a>
+</body>
 </html>
