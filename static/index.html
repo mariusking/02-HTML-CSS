@@ -4,83 +4,81 @@
     <title>Test</title>
 
     <style>
-        h1 {
-            color: red;
+        body {
+            margin:0;
+            display: grid;
+            height: 100vh;
+
+            grid-template-columns: 20%;
+            grid-template-rows: 60px auto 60px;
+            grid-template-areas:
+                    "header header header header header"
+                    "nav main main main sidebar"
+                    "footer footer footer footer footer";
         }
 
-        h1 + p {
-            font-style:italic;
+        header {
+            background: red;
+            grid-area: header;
+
         }
 
-        ul.a3 li:nth-child(2n) {
-            color: blue;
-        }
-        ul.a4 li:nth-child(3n):not(:nth-child(2n)) {
-            color: red;
+        nav {
+            background: blue;
+            grid-area: nav;
         }
 
-        :not(body) > h1 {
-            font-size: 20px;
+        main {
+            background: gray;
+            grid-area: main;
+            overflow: scroll;
         }
 
-        body * h1 {
-            font-size: 20px
+        aside {
+            background: yellow;
+            grid-area: sidebar;
         }
 
-        a:not([href]) {
-            text-decoration: line-through;
+        footer {
+            background: greenyellow;
+            grid-area: footer;
         }
-
-        a[href=""] {
-            text-decoration: overline;
-        }
-
-
 
     </style>
 </head>
 <body>
-<h1>Hello World</h1>
-
-<p>Lorem ipsum dolor sit amet, consetetur</p>
-<p>Lorem ipsum dolor sit amet, consetetur</p>
-<p>Lorem ipsum dolor sit amet, consetetur</p>
-<p>Lorem ipsum dolor sit amet, consetetur</p>
-
-<ul class="a3">
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-</ul>
-
-<ul class="a4">
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-    <li>hello</li>
-</ul>
-
-<section>
-    <h1>h1 in einer section</h1>
-</section>
-
-<a>a ohne href</a>
-<a href="">a leeres href</a>
-<a href="#">a mit href</a>
+    <header class="header" role="banner">Header</header>
+    <nav class="nav" role="navigation">Navigation</nav>
+    <main class="main" role="main">
+        <h1>Title</h1>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </main>
+    <aside class="sidebar" role="complementary">Sidebar</aside>
+    <footer class="footer" role="contentinfo">Footer</footer>
 </body>
 </html>
