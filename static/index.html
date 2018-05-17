@@ -6,10 +6,13 @@
     <style>
         body {
             margin: 0;
+            display: -ms-grid;
             display: grid;
             height: 100vh;
 
+            -ms-grid-columns: 100%;
             grid-template-columns: 100%;
+            -ms-grid-rows: auto 1fr;
             grid-template-rows: auto 1fr;
             background: red;
         }
@@ -24,15 +27,21 @@
             background: gray;
             overflow: scroll;
 
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 360px 1fr;
             grid-template-columns: 360px 1fr;
+            -ms-grid-rows: 100%;
             grid-template-rows: 100%;
         }
 
         .sidebar {
 
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 100%;
             grid-template-columns: 100%;
+            -ms-grid-rows: 50px 1fr 50px;
             grid-template-rows: 50px 1fr 50px;
         }
 
@@ -51,8 +60,11 @@
 
         .content {
 
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 100%;
             grid-template-columns: 100%;
+            -ms-grid-rows: 1fr 50px;
             grid-template-rows: 1fr 50px;
         }
 
